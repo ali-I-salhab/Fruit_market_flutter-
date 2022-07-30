@@ -2,6 +2,8 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 
 import 'package:fruitsmarket/core/utils/size_config.dart';
+import 'package:fruitsmarket/features/auth/presentation/pages/login/login_view.dart';
+import 'package:fruitsmarket/features/auth/presentation/pages/login/widgets/loginViewbody.dart';
 import 'package:fruitsmarket/features/onboarding/presentaton/widgets/custom_indicator.dart';
 import 'package:fruitsmarket/features/onboarding/presentaton/widgets/custompageview.dart';
 import 'package:get/get.dart';
@@ -76,7 +78,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                       duration: Duration(milliseconds: 500),
                       curve: Curves.easeIn);
                 } else {
-                  // Get.to(() => LoginView(), transition: Transition.rightToLeft , duration: Duration(milliseconds: 500));
+                  Get.to(() => LoginView(), transition: Transition.rightToLeft , duration: Duration(milliseconds: 500));
                 }
               },
               text: pageController!.hasClients
